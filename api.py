@@ -1,9 +1,8 @@
-# api.py
 from datetime import datetime
 from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException, Depends, Query
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy import desc, create_engine
 from pydantic import BaseModel
 import os
